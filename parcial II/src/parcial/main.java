@@ -59,7 +59,7 @@ public class main {
     }
 
     public static void ingresarDatosArreglo() {
-        System.out.println("\nIngrese datos para el arreglo (10 elementos):");
+        System.out.println("\nIntroduzca datos para el arreglo (10 elementos):");
         for (int i = 0; i < arreglo.length; i++) {
             System.out.printf("Posicion %d: ", i);
             arreglo[i] = scanner.nextLine();
