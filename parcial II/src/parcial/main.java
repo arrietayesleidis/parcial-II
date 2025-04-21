@@ -32,7 +32,7 @@ public class main {
             System.out.println("6 Listar Datos Matriz");
             System.out.println("7 Listar Dato Especifico Matriz");
             System.out.println("8 Salir");
-            System.out.print("Seleccione una opcion: ");
+            System.out.print("elija una opcion ");
             
             opcion = scanner.nextInt();
             scanner.nextLine();  
@@ -46,13 +46,13 @@ public class main {
                 case 6 -> listarDatosMatriz();
                 case 7 -> listarDatoEspecificoMatriz();
                 case 8 -> System.out.println("¡bye bye");
-                default -> System.out.println(" Intente de nuevo");
+                default -> System.out.println(" Vuelva a intentarlo");
             }
         } while (opcion != 8);
     }
 
     public static void calcularAreaCirculo() {
-        System.out.print("Ingrese el radio del circulo: ");
+        System.out.print("Digite el radio del circulo: ");
         double radio = scanner.nextDouble();
         double area = Math.PI * radio * radio;
         System.out.printf("El area del circulo es: %.2f%n", area);
@@ -64,7 +64,7 @@ public class main {
             System.out.printf("Posicion %d: ", i);
             arreglo[i] = scanner.nextLine();
         }
-        System.out.println("Datos ingresados correctamente.");
+        System.out.println("Datos actualizados");
     }
 
     public static void listarDatosArreglo() {
@@ -75,17 +75,17 @@ public class main {
     }
 
     public static void listarDatoEspecificoArreglo() {
-        System.out.print("\nIngrese la posicion a consultar (0-9): ");
+        System.out.print("\nDidite la posicion a consultar (0-9): ");
         int pos = scanner.nextInt();
         if (pos >= 0 && pos < arreglo.length) {
             System.out.printf("Valor en [%d]: %s%n", pos, arreglo[pos]);
         } else {
-            System.out.println("Posicion invalida");
+            System.out.println("Entrada no válida");
         }
     }
 
     public static void ingresarDatosMatriz() {
-        System.out.println("\nIngrese datos para la matriz (4x4):");
+        System.out.println("\nIntroduzca datos para la matriz (4x4):");
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
                 System.out.printf("[%d][%d]: ", i, j);
@@ -106,15 +106,15 @@ public class main {
     }
 
     public static void listarDatoEspecificoMatriz() {
-        System.out.print("\nIngrese fila (0-3): ");
+        System.out.print("\nIntroduzca fila (0-3): ");
         int fila = scanner.nextInt();
-        System.out.print("Ingrese columna (0-3): ");
+        System.out.print("Intoduzca columna (0-3): ");
         int columna = scanner.nextInt();
         
         if (fila >= 0 && fila < 4 && columna >= 0 && columna < 4) {
             System.out.printf("Valor en [%d][%d]: %s%n", fila, columna, matriz[fila][columna]);
         } else {
-            System.out.println("Coordenadas invalidas");
+            System.out.println("Ubicación no válida");
         }
     }
 }
