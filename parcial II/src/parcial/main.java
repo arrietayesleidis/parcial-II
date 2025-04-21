@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class main {
 
    
-  static String[] arreglo = new String[10];  
+  static String[] array = new String[10];  
   static String[][] matriz = new String[4][4]; 
   static Scanner scanner = new Scanner(System.in);
 
